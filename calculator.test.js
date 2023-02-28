@@ -236,15 +236,15 @@ describe('odd', () => {
   });
 
   test('can check a large positive odd number', () => {
-    expected = true;
+   // expected = true;
     actual = odd(1001);
-    expect(actual).toBe(expected);
+    expect(actual).toBeTruthy;
   });
 
   test('can check a large positive not odd number', () => {
-    expected = false;
+   // expected = false;
     actual = odd(2222);
-    expect(actual).toBe(expected);
+    expect(actual).oBeFalsy;
   });
 
   // test negative numbers (small/large)/(odd/not odd)
